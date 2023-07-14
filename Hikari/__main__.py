@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *ʜᴇʟʟᴏ {} !*
-✪ Hɪ sᴀʏᴀ ᴊᴏᴏx ᴍᴜsɪᴄ[🎧](https://telegra.ph//file/36b82082176fa41ed78ba.jpg)
+✪ Hɪ sᴀʏᴀ Joox ᴍᴜsɪᴄ[🎧](https://telegra.ph//file/16b84073432b30edaf0c2.jpg)
 ────────────────────────
 ◈ *ᴜᴘᴛɪᴍᴇ:* `{}`
 ◈ `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅɪ * `{}` *ɢʀᴏᴜᴘ*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/+cobEr0NNAekzOWJl"
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/kingexsuport"
         ),
     ],
     [
@@ -115,10 +115,10 @@ buttons = [
 HELP_STRINGS = """
 Klik tombol di bawah ini untuk mendapatkan deskripsi tentang perintah spesifik."""
 
-HIKARI_IMG = "https://telegra.ph//file/08bb31612374ad966c6c6.jpg"
+HIKARI_IMG = "https://telegra.ph//file/16b84073432b30edaf0c2.jpg"
 
-DONATE_STRING = """Hai,para pengguna Joox Music
- kalian dapat mendukung bot ini dengan cara menghubungi @cdkagenouu \
+DONATE_STRING = """Hai,para pengguna Kingex Music
+ kalian dapat mendukung bot ini dengan cara menghubungi @masex77 \
  Satu support dari kalian sangat berarti \
  semoga kalian suka dengan bot ini selamat menggunakan bot ini ."""
 
@@ -234,7 +234,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hᴇʟʟᴏ Jᴏᴏx Mᴜsɪᴄ!</b>\n<b>𝚄𝚙𝚝𝚒𝚖𝚎:</b> <code>{uptime}</code>",
+            f"<b>Hᴇʟʟo Joox Mᴜsɪᴄ!</b>\n<b>𝚄𝚙𝚝𝚒𝚖𝚎:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -446,8 +446,8 @@ def hikari_about_callback(update, context):
         )
     elif query.data == "hikari_support":
         query.message.edit_text(
-            text="*📝 Bantuan Perintah Joox Music*"
-            "\npilih tombol dibawah untuk melihat bantuan perintah Joox Music.",
+            text="*📝 Bantuan Perintah Kingex Music*"
+            "\npilih tombol dibawah untuk melihat bantuan perintah Kingex Music.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -503,7 +503,7 @@ def hikari_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="**𝙲𝚒𝚍**", url="https://t.me/cdkagenouu"),
+                    InlineKeyboardButton(text="**e x**", url="https://t.me/masex77"),
                  ],
                  [
                     InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="hikari_back"),
@@ -826,7 +826,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "**Hɪ Jᴏᴏx Mᴜsɪᴄ Sᴜᴅᴀʜ Dɪ Aᴋᴛɪғᴋᴀɴ.**",
+                "**Hi Joox Mᴜsɪᴄ Sᴜᴅᴀʜ Dɪ Aᴋᴛɪғᴋᴀɴ.**",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
